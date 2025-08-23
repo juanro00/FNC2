@@ -231,12 +231,44 @@ main {
     cursor: pointer;
     border-radius: 34px;
     font-family: 'Merriweather Sans', sans-serif;
-    margin-bottom: 43px;
     transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 43px;
+}
+
+.proponer-cubo-button {
+    background-color: #6b6b6b;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: 'Merriweather Sans', sans-serif;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-button:hover {
     background-color: #b3cfeb;
+}
+
+.proponer-cubo-button:hover {
+    background-color: #8a8a8a;
 }
 /* #endregion */
 
@@ -517,6 +549,7 @@ main {
     margin: 100px auto;
     max-width: 1200px;
     padding: 0 20px;
+    display: none;
 }
 
 .cubos-underline {
@@ -612,15 +645,7 @@ main {
     margin-bottom: 0;
 }
 
-.cubos-timeline {
-    margin-top: 60px;
-}
 
-.cubos-timeline img {
-    width: 100%;
-    height: auto;
-    max-width: 1200px;
-}
 /* #endregion */
 
 /* #region CRONOGRAMA */
@@ -692,7 +717,7 @@ main {
 /* #region PREMIOS */
 .premios-section {
     background: white;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -1213,6 +1238,16 @@ main {
         /* mismo que desktop */
     }
 
+    .buttons-container {
+        gap: 15px;
+    }
+
+    .proponer-cubo-button {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+    }
+
 
     /* Descripción mobile */
     .descripcion-section {
@@ -1452,6 +1487,17 @@ main {
         width: 200px;
         height: 50px;
         font-size: 18px;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .proponer-cubo-button {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
     }
 
     .cube {

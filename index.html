@@ -32,7 +32,10 @@
         </div>
         <h1 class="title">Fiesta Nacional del <b>Cubo</b></h1>
         <p class="subtitle">2da Edición del torneo de cubo<br>más grande del país</p>
-        <button class="cta-button" onclick="abrirModalInscripcion()">Inscribirme</button>
+        <div class="buttons-container">
+            <button class="cta-button" onclick="abrirModalInscripcion()">Inscribirme</button>
+            <a href="https://forms.gle/ZYz9XXxy8MzM7qmc9" target="_blank" class="proponer-cubo-button">Proponé un cubo</a>
+        </div>
     </main>
     <!-- #endregion -->
 
@@ -131,12 +134,7 @@
             </a>
         </div>
 
-        <div class="cubos-timeline">
-            <picture>
-                <source media="(max-width: 768px)" srcset="images/timeline-mob.svg" />
-                <img src="images/timeline.svg" alt="Timeline" width="1200" height="470" />
-            </picture>
-        </div>
+
     </section>
     <!-- #endregion -->
 
@@ -325,9 +323,7 @@
                 <button class="payment-btn transfer-btn" onclick="mostrarTransferencia()">
                     TRANSFERENCIA
                 </button>
-                <button class="payment-btn pre-inscripcion-btn">
-                    PRE-INSCRIPCIÓN SIN PAGO
-                </button>
+
             </div>
             
             <!-- Sección de Transferencia (se expande dentro del modal) -->
